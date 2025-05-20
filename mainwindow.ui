@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>808</width>
+    <height>527</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(61, 56, 70);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QCustomPlot" name="plot" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>811</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>450</y>
+      <width>791</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="cpu_usage">
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(249, 240, 107);
+color: rgb(249, 240, 107);
+font: 700 20pt &quot;ProggyClean CE Nerd Font&quot;;</string>
+       </property>
+       <property name="text">
+        <string>CPU USAGE:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="perc_label">
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(249, 240, 107);
+color: rgb(255, 255, 255);
+font: 700 14pt &quot;ProggyClean CE Nerd Font&quot;;</string>
+       </property>
+       <property name="text">
+        <string>5.42424242%</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="perc_label_3">
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(249, 240, 107);
+color: rgb(249, 240, 107);
+font: 700 20pt &quot;ProggyClean CE Nerd Font&quot;;</string>
+       </property>
+       <property name="text">
+        <string>CPU MODEL:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="model_label">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>ProggyClean CE Nerd Font</family>
+         <pointsize>14</pointsize>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(249, 240, 107);
+color: rgb(255, 255, 255);
+font: 700 14pt &quot;ProggyClean CE Nerd Font&quot;;</string>
+       </property>
+       <property name="text">
+        <string>5.42424242%</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header location="global">/home/doge/Downloads/QCustomPlot/qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
