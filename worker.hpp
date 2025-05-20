@@ -18,7 +18,6 @@ class Worker : public QObject
         ~Worker();
     public slots:
         void retrieveCPUusage();
-        void process();
     signals:
         void finished();
         void error(QString error);
